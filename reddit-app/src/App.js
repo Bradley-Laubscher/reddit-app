@@ -1,4 +1,7 @@
 import './App.css';
+import React from 'react';
+import Home from './components/home/home';
+
 
 function App() {
   return (
@@ -10,8 +13,8 @@ function App() {
         </h1>
       </header>
       <div className='App-body'>
-        {/* </Component1>
-        </Component2> */}
+        <Home />
+       
       </div>
     </div>
   );
