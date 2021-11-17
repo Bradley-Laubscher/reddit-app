@@ -20,4 +20,3 @@ export const getPostComments = async (permalink) => {
 
   return json[1].data.children.map((subreddit) => subreddit.data);
 };
-
