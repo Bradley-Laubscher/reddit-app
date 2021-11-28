@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import Home from './components/home/home';
+import { GetPosts } from './components/body/getPosts';
 
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
         </h1>
       </header>
       <div className='App-body'>
-        <Home />
-       
+        <GetPosts/>
+        
       </div>
     </div>
   );
