@@ -1,16 +1,15 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import { Article } from './components/body/article';
-// import GetPosts from './components/body/getPosts';
+import { Article } from './components/articles/article';
 
 
 function App() {
 
   const [articles, setArticles] = useState([]);
-  const [subreddit, setSubreddit] = useState('webdev');
+  const [subreddit, setSubreddit] = useState('JavaScript');
 
   useEffect(() => {
-    fetch("https://www.reddit.com/r/" + subreddit + ".json").then(res => {
+    fetch(`https://www.reddit.com/r/${subreddit}.json`).then(res => {
       if (res.status !== 200) {
         console.log('Error')
         return;
@@ -30,12 +29,11 @@ function App() {
       <header className="App-header">
         <img className='App-logo' src='https://www.redditinc.com/assets/images/site/reddit-logo.png' alt='Reddit-logo'/>
         <h1>
-          <span style={{color: 'red'}}>Reddit</span>Minimal
+          <span style={{color: 'red'}}>Reddit</span><span style={{color: '#18309cec'}}>Minimal</span>
         </h1>
       </header>
       <div className='App-body'>
       <input type='text' className='input' value={subreddit} onChange={ e => setSubreddit(e.target.value)}/>
-        {/* <GetPosts/> */}
         <div className='articles'>
                 {
                     (articles != null) ? articles.map((article, index) => <Article key={index} article={article.data} />) : ''

@@ -1,0 +1,16 @@
+.articles a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.articleTitles {
+    background: linear-gradient(to right, #11ebeb23, #9e5a63b2);
+    height: 5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 0.5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,3 +1,9 @@
+body {
+  background: linear-gradient(to right, #18309cec, rgba(255, 0, 0, 0.801));
+  Font-Family: 'Roboto', Sans-Serif;
+  font-size: 0.9rem;
+}
+
 .App {
   text-align: center;
 }
@@ -23,13 +29,20 @@
   font-size: calc(10px + 1vmin);
 }
 
-.App-body {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-width: 0.3rem;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.articles {
+  
 }
 
 @keyframes App-logo-spin {
