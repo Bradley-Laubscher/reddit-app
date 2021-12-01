@@ -7,9 +7,10 @@ function App() {
 
   const [articles, setArticles] = useState([]);
   const [subreddit, setSubreddit] = useState('JavaScript');
+  const proxy = "https://cors-anywhere.herokuapp.com/";
 
   useEffect(() => {
-    fetch(`https://www.reddit.com/r/${subreddit}.json`).then(res => {
+      fetch(`${proxy}https://www.reddit.com/r/${subreddit}.json`).then(res => {
       if (res.status !== 200) {
         console.log('Error')
         return;
@@ -19,8 +20,8 @@ function App() {
         if (data != null) {
           setArticles(data.data.children);
         }
+        })
       });
-    })
   }, [subreddit]);
 
 
@@ -33,7 +34,7 @@ function App() {
         </h1>
       </header>
       <div className='App-body'>
-      <input type='text' className='input' value={subreddit} onChange={ e => setSubreddit(e.target.value)}/>
+        <input type='text' className='input' value={subreddit} onChange={ e => setSubreddit(e.target.value)}/>
         <div className='articles'>
                 {
                     (articles != null) ? articles.map((article, index) => <Article key={index} article={article.data} />) : ''

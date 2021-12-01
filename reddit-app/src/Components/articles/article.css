@@ -1,7 +1,10 @@
 .articles a {
     color: white;
     text-decoration: none;
-    
+}
+
+.articles {
+    height: 7rem;
 }
 
 .articleTitles {
@@ -13,4 +16,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    text-overflow: initial;
+}
+
+.articleInfo {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#author {
+    width: 33%;
+}
+
+#votes {
+    width:33%;
+}
+
+#selfText {
+    width: 6rem;
+    height: 2rem;
+}
+
+#votes img {
+      height: 1em;
+      width: 1em;
+}
+
+
+
