@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import { Article } from './components/articles/article';
+// import axios from 'axios';
 
 
 function App() {
@@ -8,6 +9,16 @@ function App() {
   const [articles, setArticles] = useState([]);
   const [subreddit, setSubreddit] = useState('JavaScript');
   const proxy = "https://cors-anywhere.herokuapp.com/";
+  const proxyDemo = "https://cors-anywhere.herokuapp.com/corsdemo";
+  // const KEY = 
+
+  // axios.create({
+  //   baseURL: `https://www.reddit.com/r/`,
+  //   params: {
+  //     part: `${subreddit}.json`,
+  //     key: 
+  //   }
+  // })
 
   useEffect(() => {
       fetch(`${proxy}https://www.reddit.com/r/${subreddit}.json`).then(res => {
@@ -16,6 +27,10 @@ function App() {
         return;
       }
 
+      if (res.status === 403) {
+          alert(`Please click the link to allow the retrieval of data from Reddit: ${proxyDemo}`)
+      }
+      
       res.json().then(data => {
         if (data != null) {
           setArticles(data.data.children);
