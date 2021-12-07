@@ -31,8 +31,8 @@ export function Article(props) {
           />
         }
         <h4 id='votes'>
-          <img src='https://iconsplace.com/wp-content/uploads/_icons/40e0d0/256/png/thumbs-up-icon-17-256.png' alt='thumbs up'/>  { props.article.ups } <br/>
-          <img src='https://iconsplace.com/wp-content/uploads/_icons/000080/256/png/thumbs-down-icon-9-256.png' alt='thumbs down' />  { props.article.downs }
+          <img src='https://iconsplace.com/wp-content/uploads/_icons/40e0d0/256/png/thumbs-up-icon-17-256.png' alt='thumbs up'/>  { props.article.ups }<br/>
+          Upvote Ratio: {props.article.upvote_ratio}
         </h4>
       </div>
     </article>
