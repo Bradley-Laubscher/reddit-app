@@ -35,14 +35,28 @@ body {
   text-align: center;
   font-weight: bold;
   border-width: 0.3rem;
+  width: 15rem;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.articles {
-  
+button {
+  font-weight: bold;
+  border-color: white;
+  width:13%;
+  height: 2rem;
+  margin: 2rem;
+  border-width: 0.3rem;
+}
+
+.buttonLeft {
+  color: #18309cec;
+}
+
+.buttonRight {
+  color: rgba(255, 0, 0, 0.801);
 }
 
 @keyframes App-logo-spin {
