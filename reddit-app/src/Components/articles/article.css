@@ -46,3 +46,9 @@
       height: 1em;
       width: 1em;
 }
+
+
+.button {
+    border-width: 0.2rem;
+    border-color: white;
+}

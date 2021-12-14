@@ -20,6 +20,7 @@ export function Article(props) {
         <input
           type="button"
           value="Learn more"
+          className='button'
           onClick={togglePopup}
         />
         {isOpen && <Popup
