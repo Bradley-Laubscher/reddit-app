@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import { Article } from './components/articles/article';
+import { Article } from './Components/articles/article';
 
 
 function App() {
