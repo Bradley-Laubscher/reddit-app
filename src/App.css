@@ -69,3 +69,21 @@ button {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 540px) {
+  button {
+    width: 20%;
+    margin: auto;
+  }
+
+  h3.articleTitles {
+    width: 95%;
+    margin: auto;
+    font-size: 0.8rem;
+  }
+
+  div.articleInfo {
+    padding-top: 1.1rem;
+    font-size: 0.7rem;
+  }
+}
