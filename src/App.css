@@ -40,6 +40,11 @@ body {
   background: black;
 }
 
+input.button {
+  border-color: black;
+  border-width: 0.09rem;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -83,7 +88,11 @@ button {
   }
 
   div.articleInfo {
-    padding-top: 1.1rem;
+    padding-top: 1.3rem;
+    font-size: 0.6rem;
+  }
+
+  input.button {
     font-size: 0.7rem;
   }
 }
