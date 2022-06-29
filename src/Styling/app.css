@@ -29,6 +29,10 @@ body {
   font-size: calc(10px + 1vmin);
 }
 
+.inputTitle {
+  font-weight: bold;
+}
+
 .input {
   margin: 1rem;
   padding: 0.5rem;

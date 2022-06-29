@@ -1,8 +1,6 @@
 import React from 'react';
-import './selfText.css';
 
 const Popup = props => {
-
     return (
       <div className="popup-box">
         <div className="box">

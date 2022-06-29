@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './article.css';
 import Popup from './selfText';
 
 export function Article(props) {
@@ -39,5 +38,3 @@ export function Article(props) {
     </article>
   )
 }
-
-export default Article;

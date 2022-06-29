@@ -1,7 +1,5 @@
-import './App.css';
 import React, { useState, useEffect } from 'react';
 import { Article } from './Components/articles/article';
-
 
 export function App() {
 
@@ -53,6 +51,7 @@ export function App() {
             <button className='buttonRight' value={'rising'} onClick={ e => setSubreddit(e.target.value)}>Rising</button>
             <button className='buttonRight' value={'random'} onClick={ e => setSubreddit(e.target.value)}>Random</button>
         </div>
+        <p className='inputTitle'>Search Reddit:</p>
         <input type='text' className='input' value={subreddit} onChange={ e => setSubreddit(e.target.value)}/>
         <div className='articles'>
           {
@@ -63,5 +62,3 @@ export function App() {
     </div>
   );
 }
-
-export default App;
