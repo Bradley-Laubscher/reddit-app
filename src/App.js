@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Article } from './Components/articles/article';
+import RLogo from './Resources/RLogo.png';
 
 export function App() {
 
@@ -38,7 +39,7 @@ export function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img className='App-logo' src='https://www.redditinc.com/assets/images/site/reddit-logo.png' alt='Reddit-logo'/>
+        <img className='App-logo' src={RLogo} alt='Reddit-logo'/>
         <h1>
           <span style={{color: 'red'}}>Reddit</span><span style={{color: '#18309cec'}}>Minimal</span>
         </h1>
