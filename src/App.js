@@ -3,14 +3,11 @@ import { Article } from './Components/articles/article';
 import RLogo from './Resources/RLogo.png';
 
 export function App() {
-
   const [articles, setArticles] = useState([]);
   const [subreddit, setSubreddit] = useState('Javascript');
-  const proxy = "https://cors-anywhere.herokuapp.com/";
-
 
   useEffect(() => {
-      fetch(`${proxy}https://www.reddit.com/r/${subreddit}.json`).then(res => {
+      fetch(`https://www.reddit.com/r/${subreddit}.json`).then(res => {
 
         if (res.status === 429) {
           alert('Too many resent requests!');
@@ -28,13 +25,6 @@ export function App() {
    
       });
   }, [subreddit, setSubreddit]);
-
-  useEffect(() => {
-    if (window.confirm('Press OK to follow a link to temporarily allow access for the the retrieval of data from Reddit. Press Cancel if you have already allowed access and would like to load the page.')) {
-      window.open('https://cors-anywhere.herokuapp.com/corsdemo', '_blank')
-    }
-  }, []);
-
 
   return (
     <div className="App">
